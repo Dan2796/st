@@ -1,9 +1,7 @@
-diff --git a/config.h b/config.h
-index 877afab..6a1699f 100644
---- a/config.h
-+++ b/config.h
+--- config.h
++++ config.h
 @@ -84,41 +84,35 @@ static unsigned int tabspaces = 8;
-
+ 
  /* Terminal colors (16 first used in escape sequence) */
  static const char *colorname[] = {
 -	/* 8 normal colors */
@@ -32,7 +30,7 @@ index 877afab..6a1699f 100644
 -	"#cccccc",
 -	"#555555",
 -};
-
+ 
 +  /* 8 normal colors */
 +  [0] = "#fbf1c7", /* hard contrast: #f9f5d7 / soft contrast: #f2e5bc */
 +  [1] = "#cc241d", /* red     */
@@ -53,7 +51,7 @@ index 877afab..6a1699f 100644
 +  [14] = "#427b58", /* cyan    */
 +  [15] = "#3c3836", /* white   */
 +};
-
+ 
  /*
   * Default colors (colorname index)
 - * foreground, background, cursor, reverse cursor
@@ -66,5 +64,5 @@ index 877afab..6a1699f 100644
 +unsigned int defaultbg = 0;
 +static unsigned int defaultcs = 15;
  static unsigned int defaultrcs = 257;
-
+ 
  /*

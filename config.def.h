@@ -98,29 +98,29 @@ float alpha = 0.9, alphaUnfocused = 0.5;
 
 static const char *colorname[] = {
 /* 8 normal colors */
-  "black",
-  "red3",
-  "green",
-  "yellow3",
-  "blue2",
-  "magenta3",
-  "cyan3",
-  "gray90",
+	"#3b4252", /* black   */
+	"#bf616a", /* red     */
+	"#a3be8c", /* green   */
+	"#ebcb8b", /* yellow  */
+	"#81a1c1", /* blue    */
+	"#b48ead", /* magenta */
+	"#88c0d0", /* cyan    */
+	"#e5e9f0", /* white   */
 
 /* 8 bright colors */
-  "gray60",
-  "red",
-  "green",
-  "yellow",
-  "#5c5cff",
-  "magenta",
-  "cyan",
-  "white",
+ 	"#4c566a", /* black   */
+	"#bf616a", /* red     */
+	"#a3be8c", /* green   */
+	"#ebcb8b", /* yellow  */
+	"#81a1c1", /* blue    */
+	"#b48ead", /* magenta */
+	"#8fbcbb", /* cyan    */
+	"#eceff4", /* white   */
 
   [255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-  "#cccccc",
-  "#555555",
+	"#2e3440", /* background */
+	"#d8dee9", /* foreground */
 };
 
 /*
@@ -129,12 +129,17 @@ static const char *colorname[] = {
  */
 
 /* I didn't fully patch the dracula theme - left out transparency bits I hope*/
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 131; /*256 for transparent */ 
-static unsigned int defaultrcs = 257;
-unsigned int bg = 16, bgUnfocused = 16;
+/*unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;*/
+/*static unsigned int defaultcs = 131;*/ /*256 for transparent, 131 balanced*/ 
+/*static unsigned int defaultrcs = 257;
+unsigned int bg = 16, bgUnfocused = 16;*/
 
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+static unsigned int defaultcs = 257;
+static unsigned int defaultrcs = 256;
+unsigned int bg = 16, bgUnfocused = 16;
 /*
  * Default shape of cursor
  * 2: Block ("█")
